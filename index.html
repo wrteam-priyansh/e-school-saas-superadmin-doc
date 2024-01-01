@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>E-school saas super admin guide | Home</title>
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/jquery.highlight.css" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/scrollbar.css" rel="stylesheet" />
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+    <!--Page Wrapper-->
+    <div class="page-wrapper">
+        <!--Sidebar-->
+        <aside id="sidebar">
+            <!--Toggle Button-->
+            <div class="button-container clearfix">
+                <div class="menu-toggle flaticon-menu10"></div>
+            </div>
+
+            <!--Menu Box-->
+            <div class="menu-box">
+                <!--Logo-->
+                <br />
+                <div class="logo text-right">
+                    <a href="#"><img src="images/e-school-saas-sq.svg" width="119" alt="" /></a>
+                </div>
+
+                <!--Sticky Menu-->
+                <nav class="sticky-menu animated bounceInDown">
+                    <ul>
+                        <!-- normal list -->
+                        <li class="current">
+                            <a href="#introduction">Introduction <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#features">Features <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#authentication">Authentication <span class="fa fa-arrow-right"></span></a>
+                        </li>
+
+                        <li>
+                            <a href="#dashboard">Dashboard <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#schools">Schools <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#packages">Packages <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#addons">Addons <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#subscription">Subscription <span class="fa fa-arrow-right"></span></a>
+                        </li>
+
+
+
+                        <li class='sub-menu'><a>Staff management<i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#rolePermission'>Roll and Permission</a></li>
+                                <li><a href='#staff'>Staff</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#faqs">Faqs <span class="fa fa-arrow-right"></span></a>
+                        </li>
+
+                        <li class='sub-menu'><a>System settings<i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#appSettings'>Setup Flutter</a></li>
+                                <li><a href='#generalSettings'>Change Package Name Of Application</a></li>
+                                <li><a href='#subscriptionSettings'>Integrate with Firebase</a></li>
+                                <li><a href='#frontSideSettings'>Integrate with Admin Panel</a></li>
+                                <li><a href='#languageSettings'>Change App logo</a></li>
+                                <li><a href='#FCM Key'>Change App name</a></li>
+                                <li><a href='#runThisApp'>Run This App</a></li>
+                                <li><a href='#changeAppTheme'>Change App theme</a></li>
+                                <li><a href='#changeFont'>Change Font</a></li>
+                                <li><a href='#changeLanguage'>Change Language</a></li>
+                                <li><a href='#changeItemAnimations'>Change Item Animations</a></li>
+                                <li><a href='#generateReleaseVersion'>Generate Release Version</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#support">Support <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#rating">Rating <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#contactUs">Contact Us <span class="fa fa-arrow-right"></span></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="copyright">Copyright &copy; <a href="mailto:support@wrteam.in">WRTeam</a> 2023</div>
+        </aside>
+
+        <div id="content-section">
+            <!--Introduction Section-->
+            <section class="section introduction" id="introduction">
+                <br />
+                <div class="sec-content">
+                    <h2>E-school saas super admin guide</h2>
+                    <h3>Documentation</h3>
+                    <div class="separator"></div>
+                    <strong>By :</strong> WRTeam<br />
+                    <strong>Email :</strong>
+                    <a href="mailto:wrteam.priyansh@gmail.com ">wrteam.priyansh@gmail.com</a> <br />
+
+                    <br />
+                    <h4>
+                        Thank you for using <strong>e-School Saas</strong>.
+                        In this document you will get to know more about super admin features and how the features
+                        actually works with some of the notes.
+                    </h4>
+                    <br />
+
+                    <h4> All the fields marked with (*) are mandatory.
+                    </h4>
+                    <br />
+
+                    <h4> Any deleted data will be moved into the trashed first. From trashed super admin can restore the
+                        data or
+                        delete it permanently.
+                    </h4>
+
+                </div>
+            </section>
+
+            <!--Features-->
+            <section class="section html-structure" id="features">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Features</h2>
+                </div>
+                <br />
+                <div class="sec-content">
+                    <div class="grid-container">
+                        <div class="grid-item">Student Management</div>
+                        <div class="grid-item">Academics Management</div>
+                        <div class="grid-item">Slider Management</div>
+                        <div class="grid-item">Teacher Management</div>
+                        <div class="grid-item">Session Year Management</div>
+                        <div class="grid-item">Holiday Management</div>
+                        <div class="grid-item">Timetable Management</div>
+                        <div class="grid-item">Attendance Management</div>
+                        <div class="grid-item">Exam Management</div>
+                        <div class="grid-item">Lesson Management</div>
+                        <div class="grid-item">Assignment Management</div>
+                        <div class="grid-item">Announcement Management</div>
+                        <div class="grid-item">Staff Management</div>
+                        <div class="grid-item">Expense Management</div>
+                        <div class="grid-item">Staff Leave Management</div>
+                        <div class="grid-item">Fees Management</div>
+                    </div>
+                    <br />
+                    <h3> There are 16 features in this system.
+                        Out of these 12 features will be use for package building.
+                    </h3>
+                    <h3>
+                        Default 4 features are following :
+                        Student management
+                        Academics management
+                        Teacher management
+                        Session year management
+                    </h3>
+
+
+
+                </div>
+            </section>
+
+            <!--Authentication-->
+            <section class="section html-structure" id="authentication">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Authentication</h2>
+                </div>
+
+            </section>
+
+            <!--Dashboard-->
+            <section class="section html-structure" id="dashboard">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Dashboard</h2>
+                </div>
+                <br />
+                <img src="images/dashboard.png" alt="e-School Saas">
+
+            </section>
+
+            <!--Schools-->
+            <section class="section html-structure" id="schools">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Schools</h2>
+                </div>
+                <br />
+                <img src="images/create-school.png" alt="e-School Saas">
+                <br />
+                <img src="images/add-school-admin.png" alt="e-School Saas">
+
+                <br />
+                <img src="images/list-schools.png" alt="e-School Saas">
+
+                <br />
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2> Super Admin can create the school and school admin. School admin can access the admin
+                            panel of
+                            school
+                            by the admin email and password. Password will be phone number of admin by default.
+                        </h2>
+
+                    </li>
+                    <br>
+                    <li>
+                        <h2> Super Admin can select the package for school at the time of registration. Package start
+                            date will be same as school registration date.
+                        </h2>
+                    </li>
+                    <br>
+                    <li>
+                        <h2> Super admin can change the school and school admin details. Super admin can delete
+                            the schools.
+                        </h2>
+                    </li>
+                    <br>
+                    <li>
+                        <h2> Super admin can activate/deactivate the school. If school is deactive then students,staffs
+                            can not login in the system.
+                        </h2>
+                    </li>
+                </ul>
+
+            </section>
+
+            <!-- Packages-->
+
+            <section class="section html-structure" id="packages">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Packages</h2>
+                </div>
+                <br />
+                <img src="images/create-package.png" alt="e-School Saas">
+                <br />
+                <br />
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2>
+                            By default features Student management, Academics management, Teacher management and
+                            Session year management will be part of any newly created package. Super admin can create
+                            package with
+                            other features.
+
+                        </h2>
+                    </li>
+                    <br />
+                    <li>
+                        <h2>
+                            Once package is created it will be in unpublished mode. Only published packages will be
+                            shown to schools.
+                        </h2>
+                    </li>
+                    <br />
+                    <li>
+                        <h2>
+                            If package is marked with highlighted then this package will be shown in advertisement page.
+                        </h2>
+                    </li>
+                </ul>
+
+                <br />
+                <img src="images/list-packages.png" alt="e-School Saas">
+                <br />
+                <br />
+                <ul>
+
+                    <li>
+                        <h2> Super admin can update, delete the package.
+                            If admin update the per active student price, per active staff price and features then it
+                            will be
+                            effected for next billing cycle of school.
+                        </h2>
+                    </li>
+                    <br />
+                    <li>
+                        <h2>
+                            Super admin can update the package rank by dragging the package up or down. On the other
+                            side
+                            school will see the packages based on rank.
+                        </h2>
+                    </li>
+
+
+                </ul>
+            </section>
+
+            <!-- Add-ons-->
+
+            <section class="section html-structure" id="addons">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Add-ons</h2>
+                </div>
+                <br />
+                <img src="images/create-addon.png" alt="e-School Saas">
+                <br />
+
+                <img src="images/list-packages.png" alt="e-School Saas">
+                <br />
+                <br />
+
+                <ul>
+                    <li>
+                        <h2>
+                            Super admin can create the add-on for all the features except the 4 default features. After
+                            creating the add-on it will be in unpublished mode.
+                        </h2>
+                    </li>
+                    <br />
+                    <li>
+                        <h2>
+                            If super admin update the price of any add-on that will take effect in next billing cycle of
+                            school.
+                        </h2>
+                    </li>
+
+
+                </ul>
+            </section>
+
+            <!--Subscription-->
+
+            <section class="section html-structure" id="subscription">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Subscription</h2>
+                </div>
+                <br />
+                <img src="images/subscriptions.png" alt="e-School Saas">
+                <br />
+                <br />
+
+                <ul>
+                    <li>
+                        <h2>
+                            Super admin can extend the billing payment date of any school. Once the billing payment date
+                            has passed then it can not be modified.
+                        </h2>
+                    </li>
+                    <br />
+                    <li>
+                        <h2>
+
+                        </h2>
+                    </li>
+
+
+                </ul>
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <!--Contact Us-->
+            <section class="section support" id="contactUs">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2>Contact Us</h2>
+                </div>
+
+                <br />
+                <div class="sec-content">
+                    <h4>WRTeam has creative and dedicated group of developers who are mastered in Apps Developments and
+                        Web Application Development with a niche in delivering quality solutions to customers across the
+                        globe.
+                        Contact us today to find out how we can help you or for freelance work.
+                        <br>
+                    </h4>
+                    <h4>Visit Us : <a href="https://wrteam.in/" target="_blank">https://wrteam.in</a>
+                        <br>
+                    </h4>
+                    <h4>Mail Us : <a href="mailto:support@wrteam.in" target="_blank">support@wrteam.in</a></h4>
+                    <br>
+                    <h4>Thank you very much.</h4>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <!--End pagewrapper-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/prism.js"></script>
+
+    <script src="js/jquery.highlight.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
